@@ -27,33 +27,29 @@ export const MeetupForm = () => {
             <CardBody>
                 <form onSubmit={submitHandler}>
                     <FormInput
-                        id="title"
-                        label="Title"
-                        required
-                        // note: ref should be innerRef for custom components
                         innerRef={titleInput}
+                        label="Title"
+                        // note: ref should be innerRef for custom components
+                        required
                     />
 
                     <FormInput
-                        id="image"
+                        innerRef={imageInput}
                         label="Image"
                         type="url"
                         required
-                        innerRef={imageInput}
                     />
 
                     <FormInput
-                        id="address"
+                        innerRef={addressInput}
                         label="Address"
                         required
-                        innerRef={addressInput}
                     />
                     <FormInput
-                        id="description"
+                        innerRef={descriptionInput}
                         label="Description"
                         type="textarea"
                         required
-                        innerRef={descriptionInput}
                     />
                     <button className="btn btn-primary">Add Meetup</button>
                 </form>
