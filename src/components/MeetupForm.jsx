@@ -7,11 +7,11 @@ export const MeetupForm = () => {
         <Card>
             <CardBody>
                 <form>
-                    <FormInput name="title" label="Title" required />
-                    <FormInput name="image" label="Image" type="url" required />
-                    <FormInput name="address" label="Address" required />
+                    <FormInput id="title" label="Title" required />
+                    <FormInput id="image" label="Image" type="url" required />
+                    <FormInput id="address" label="Address" required />
                     <FormInput
-                        name="description"
+                        id="description"
                         label="Description"
                         type="textarea"
                         required
