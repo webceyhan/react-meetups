@@ -1,10 +1,12 @@
+import { Link } from 'react-router-dom';
+
 export const MainNavigation = () => {
     return (
         <nav className="navbar fixed-top navbar-expand navbar-dark bg-danger bg-opacity-75">
             <div className="container py-1">
-                <a className="navbar-brand" href="#">
+                <Link className="navbar-brand" to="/">
                     ReactMeetups
-                </a>
+                </Link>
                 <button
                     type="button"
                     className="navbar-toggler"
@@ -16,19 +18,19 @@ export const MainNavigation = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <Link className="nav-link" to="/all">
                                 All Meetups
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <Link className="nav-link" to="/new">
                                 Add New Meetup
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">
+                            <Link className="nav-link" to="/favorites">
                                 My Favorites
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>

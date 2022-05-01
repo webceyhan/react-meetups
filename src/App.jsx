@@ -6,18 +6,16 @@ import { NewMeetupPage } from './pages/NewMeetup';
 
 export const App = () => {
     return (
-        <>
+        <BrowserRouter>
             <MainNavigation />
             <div className="container">
-                <BrowserRouter>
-                    <Routes>
-                        <Route path="/" element={<Navigate to="all" />} />
-                        <Route path="/all" element={<AllMeetupsPage />} />
-                        <Route path="/new" element={<NewMeetupPage />} />
-                        <Route path="/favorites" element={<FavoritesPage />} />
-                    </Routes>
-                </BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Navigate to="all" />} />
+                    <Route path="/all" element={<AllMeetupsPage />} />
+                    <Route path="/new" element={<NewMeetupPage />} />
+                    <Route path="/favorites" element={<FavoritesPage />} />
+                </Routes>
             </div>
-        </>
+        </BrowserRouter>
     );
 };
