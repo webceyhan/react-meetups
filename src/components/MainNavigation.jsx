@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { NavLink } from './NavLink';
 
 export const MainNavigation = () => {
     return (
@@ -18,19 +19,13 @@ export const MainNavigation = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
-                            <Link className="nav-link" to="/all">
-                                All Meetups
-                            </Link>
+                            <NavLink to="/all">All Meetups</NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/new">
-                                Add New Meetup
-                            </Link>
+                            <NavLink to="/new">Add New Meetup</NavLink>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/favorites">
-                                My Favorites
-                            </Link>
+                            <NavLink to="/favorites">My Favorites</NavLink>
                         </li>
                     </ul>
                 </div>
