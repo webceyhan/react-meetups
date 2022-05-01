@@ -3,7 +3,7 @@ import { Card } from './ui/Card';
 import { CardBody } from './ui/CardBody';
 import { FormInput } from './ui/FormInput';
 
-export const MeetupForm = () => {
+export const MeetupForm = ({ onAddMeetup }) => {
     const titleInput = useRef();
     const imageInput = useRef();
     const addressInput = useRef();
@@ -19,7 +19,7 @@ export const MeetupForm = () => {
             description: descriptionInput.current.value,
         };
 
-        console.log(formData);
+        onAddMeetup(formData);
     };
 
     return (
