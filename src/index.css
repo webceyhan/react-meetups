@@ -10,3 +10,7 @@ body {
         url('./assets/background.jpg');
     background-size: cover;
 }
+
+.bg-purple {
+    background-color: rgba(150, 15, 80, 0.85);
+}

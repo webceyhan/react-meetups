@@ -3,7 +3,7 @@ import { NavLink } from './NavLink';
 
 export const MainNavigation = () => {
     return (
-        <nav className="navbar fixed-top navbar-expand navbar-dark bg-danger bg-opacity-75">
+        <nav className="navbar fixed-top navbar-expand navbar-dark bg-purple">
             <div className="container py-1">
                 <Link className="navbar-brand" to="/">
                     ReactMeetups
