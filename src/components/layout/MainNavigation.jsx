@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom';
+import { useFavoritesContext } from '../../store/FavoritesContext';
 import { NavLink } from './NavLink';
 
 export const MainNavigation = () => {
+    const favoritesCtx = useFavoritesContext();
+    const favoriteTotal = favoritesCtx.favorites.length;
+
     return (
         <nav className="navbar fixed-top navbar-expand navbar-dark bg-purple">
             <div className="container py-1">
@@ -25,7 +29,12 @@ export const MainNavigation = () => {
                             <NavLink to="/new">Add New Meetup</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/favorites">My Favorites</NavLink>
+                            <NavLink to="/favorites">
+                                My Favorites
+                                <span className="badge bg-danger ms-2">
+                                    {favoriteTotal}
+                                </span>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
