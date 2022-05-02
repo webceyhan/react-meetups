@@ -10,7 +10,7 @@
 
 This is a tutorial based Meetups application built on Vite using React + Bootstrap.
 
-[View Demo](https://react-meetups-app.netlify.app/) |
+[View Demo](https://webceyhan-react-meetups.netlify.app) |
 [Report Issue](https://github.com/webceyhan/react-meetups/issues) |
 [Request Feature](https://github.com/webceyhan/react-meetups/pulls) |
 [@webceyhan](https://twitter.com/webceyhan)
